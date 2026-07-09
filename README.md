@@ -15,8 +15,8 @@ Målet är att bygga en professionell, låst digital presentations- och säljpor
 
 ## Första tekniska mål
 
-1. Skapa stabil pluginstruktur.
-2. Säkerställ att pluginet kan aktiveras/deaktiveras utan fel.
+1. Skapa stabil pluginstruktur. Klart i Task 001.
+2. Säkerställ att pluginet kan aktiveras/deaktiveras utan fel. Grund stöds i Task 001.
 3. Lägg grunden för roller, behörigheter och låst portal.
 4. Bygg publik produktsida utan känsligt innehåll.
 5. Bygg låst kundportal stegvis.
@@ -47,7 +47,15 @@ Målet är att bygga en professionell, låst digital presentations- och säljpor
 │   └── DEFINITION_OF_DONE.md
 └── plugin/
     └── lth-container-portal/
+        ├── lth-container-portal.php
+        ├── includes/
+        ├── admin/
+        └── assets/
 ```
+
+## Nuvarande pluginstatus
+
+Task 001 har lagt grunden för ett aktiverbart WordPress-plugin med statusvy i WordPress admin. Pluginet innehåller ännu inte inloggning, kundportal, dokumenthantering, kundadmin eller databasstruktur.
 
 ## Arbetsflöde
 

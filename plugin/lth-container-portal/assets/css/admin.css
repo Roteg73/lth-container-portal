@@ -1,0 +1,24 @@
+.lthcp-status-page {
+    max-width: 920px;
+}
+
+.lthcp-status-card {
+    background: #ffffff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding: 24px;
+}
+
+.lthcp-status-ok {
+    background: #e9f7ef;
+    border-left: 4px solid #1f7a3f;
+    color: #0f5132;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding: 12px 14px;
+}
+
+.lthcp-status-table th {
+    width: 220px;
+}
