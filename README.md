@@ -17,8 +17,8 @@ Målet är att bygga en professionell, låst digital presentations- och säljpor
 
 1. Skapa stabil pluginstruktur. Klart i Task 001.
 2. Säkerställ att pluginet kan aktiveras/deaktiveras utan fel. Grund stöds i Task 001.
-3. Lägg grunden för roller, behörigheter och låst portal.
-4. Bygg publik produktsida utan känsligt innehåll.
+3. Bygg publik produktsida utan känsligt innehåll. Klart i Task 002 via shortcode.
+4. Lägg grunden för roller, behörigheter och låst portal.
 5. Bygg låst kundportal stegvis.
 
 ## Rekommenderad repo-struktur
@@ -55,7 +55,9 @@ Målet är att bygga en professionell, låst digital presentations- och säljpor
 
 ## Nuvarande pluginstatus
 
-Task 001 har lagt grunden för ett aktiverbart WordPress-plugin med statusvy i WordPress admin. Pluginet innehåller ännu inte inloggning, kundportal, dokumenthantering, kundadmin eller databasstruktur.
+Task 001 har lagt grunden för ett aktiverbart WordPress-plugin med statusvy i WordPress admin.
+
+Task 002 har lagt till den publika shortcoden `[lth_container_product]` för en enkel produktsida utan känsligt innehåll. Pluginet innehåller ännu inte inloggning, kundportal, dokumenthantering, kundadmin eller databasstruktur.
 
 ## Arbetsflöde
 

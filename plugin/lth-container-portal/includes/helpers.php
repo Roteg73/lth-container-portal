@@ -17,3 +17,12 @@ if (!function_exists('lthcp_get_version')) {
         return defined('LTHCP_VERSION') ? (string) LTHCP_VERSION : '0.0.0';
     }
 }
+
+if (!function_exists('lthcp_get_template_path')) {
+    function lthcp_get_template_path(string $template): string
+    {
+        $template = ltrim($template, '/\\');
+
+        return LTHCP_PLUGIN_DIR . 'templates/' . $template;
+    }
+}

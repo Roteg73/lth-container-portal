@@ -2,8 +2,8 @@
 /**
  * Plugin Name: LTH Container Portal
  * Plugin URI: https://github.com/Roteg73/lth-container-portal
- * Description: Stabil grund for LTH Container Portal som WordPress-plugin.
- * Version: 0.1.0
+ * Description: Publik produktpresentation och grund for LTH Container Portal.
+ * Version: 0.2.0
  * Author: LTH
  * Text Domain: lth-container-portal
  * Requires at least: 6.0
@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!defined('LTHCP_VERSION')) {
-    define('LTHCP_VERSION', '0.1.0');
+    define('LTHCP_VERSION', '0.2.0');
 }
 
 if (!defined('LTHCP_PLUGIN_FILE')) {
@@ -38,6 +38,8 @@ require_once LTHCP_PLUGIN_DIR . 'includes/helpers.php';
 require_once LTHCP_PLUGIN_DIR . 'includes/class-activator.php';
 require_once LTHCP_PLUGIN_DIR . 'includes/class-deactivator.php';
 require_once LTHCP_PLUGIN_DIR . 'includes/class-assets.php';
+require_once LTHCP_PLUGIN_DIR . 'public/class-public-product.php';
+require_once LTHCP_PLUGIN_DIR . 'includes/class-shortcodes.php';
 require_once LTHCP_PLUGIN_DIR . 'admin/class-admin-menu.php';
 require_once LTHCP_PLUGIN_DIR . 'includes/class-plugin.php';
 

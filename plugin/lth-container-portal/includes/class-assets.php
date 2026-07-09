@@ -17,6 +17,8 @@ if (!class_exists('LTHCP_Assets')) {
      */
     final class LTHCP_Assets
     {
+        private const PUBLIC_SHORTCODE = 'lth_container_product';
+
         private const ADMIN_HOOKS = array(
             'toplevel_page_lth-container-portal',
             'lth-container-portal_page_lth-container-portal-status',
@@ -62,9 +64,41 @@ if (!class_exists('LTHCP_Assets')) {
             );
         }
 
+        public function enqueue_public_assets_when_shortcode_is_present(): void
+        {
+            if (!$this->current_request_has_public_shortcode()) {
+                return;
+            }
+
+            $this->enqueue_public_assets();
+        }
+
+        public function enqueue_public_assets(): void
+        {
+            $this->register_public_assets();
+
+            wp_enqueue_style('lthcp-public');
+            wp_enqueue_script('lthcp-public');
+        }
+
         private function is_plugin_admin_page(string $hook_suffix): bool
         {
             return in_array($hook_suffix, self::ADMIN_HOOKS, true);
+        }
+
+        private function current_request_has_public_shortcode(): bool
+        {
+            if (!is_singular()) {
+                return false;
+            }
+
+            global $post;
+
+            if (!is_object($post) || empty($post->post_content)) {
+                return false;
+            }
+
+            return has_shortcode((string) $post->post_content, self::PUBLIC_SHORTCODE);
         }
     }
 }
