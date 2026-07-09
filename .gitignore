@@ -1,0 +1,51 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs/cache
+*.log
+.cache/
+tmp/
+temp/
+
+# WordPress/local
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wordpress/
+public_html/
+htdocs/
+
+# Environment/secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+config.local.php
+
+# Dependencies/build output
+node_modules/
+vendor/
+dist/
+build/
+
+# Databases/backups
+*.sql
+*.sqlite
+*.db
+*.bak
+*.zip
+*.tar
+*.tar.gz
+
+# Do not commit real customer/private material
+private-documents/
+customer-documents/
+protected-files/
